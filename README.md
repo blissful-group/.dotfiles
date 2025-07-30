@@ -29,7 +29,7 @@ You can mount any configuration, or install dependencies in your container, usin
 config_folder=".devcontainer/config"
 shared_profile_repository="https://github.com/blissful-group/.dotfiles"
 
-personal_bootstrap="$HOME/.dotfiles/bootstraps"
+personal_bootstrap="$HOME/.dotfiles/bootstrap"
 default_bootstrap="$config_folder/bootstrap"
 
 rm -rf "$config_folder"
