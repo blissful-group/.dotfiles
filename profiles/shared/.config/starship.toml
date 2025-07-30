@@ -1,0 +1,47 @@
+
+add_newline = false
+command_timeout = 10_000
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$kubernetes\
+$docker_context\
+$env_var\
+$cmd_duration\
+$jobs\
+$time\
+$status\
+$character\
+"""
+
+[character]
+error_symbol = "[→](bold red)"
+success_symbol = "[→](bold green)"
+
+[cmd_duration]
+format = "[$duration]($style) "
+
+[directory]
+fish_style_pwd_dir_length = 1
+#style = "bold green"
+
+[git_branch]
+format = '\($branch\) '
+
+[hostname]
+format = "@$hostname "
+ssh_only = true
+
+[kubernetes]
+disabled = false
+format = '\($symbol$context\) '
+
+[status]
+disabled = false
+format = "[$symbol $status]($style) "
+
+[username]
+format = "[$user]($style) - "
+show_always = true
