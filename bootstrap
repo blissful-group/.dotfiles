@@ -1,0 +1,8 @@
+#!/bin/bash
+SHARED=.devcontainer/config/profiles/shared
+
+rm -rf ~/.zshrc
+rm -rf ~/.config/starship.toml
+
+ln -s "$(pwd)"/$SHARED/.zshrc ~/.zshrc
+ln -s "$(pwd)"/$SHARED/.config/starship.toml ~/.config/starship.toml
